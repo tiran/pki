@@ -1,0 +1,52 @@
+{
+ "http_interactions": [
+  {
+   "recorded_at": "2017-05-05T14:11:13",
+   "request": {
+    "body": {
+     "encoding": "utf-8",
+     "string": ""
+    },
+    "headers": {
+     "Accept": [
+      "application/json"
+     ],
+     "Accept-Encoding": [
+      "gzip, deflate"
+     ],
+     "Connection": [
+      "keep-alive"
+     ],
+     "User-Agent": [
+      "PKI tests"
+     ]
+    },
+    "method": "GET",
+    "uri": "https://pki.test:8443/ca/admin/ca/getDomainXML"
+   },
+   "response": {
+    "body": {
+     "encoding": null,
+     "string": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><XMLResponse><DomainInfo>&lt;?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?&gt;&lt;DomainInfo&gt;&lt;Name&gt;pkitest&lt;/Name&gt;&lt;CAList&gt;&lt;CA&gt;&lt;Host&gt;pki.test&lt;/Host&gt;&lt;UnSecurePort&gt;8080&lt;/UnSecurePort&gt;&lt;SecurePort&gt;8443&lt;/SecurePort&gt;&lt;SecureEEClientAuthPort&gt;8443&lt;/SecureEEClientAuthPort&gt;&lt;SecureAgentPort&gt;8443&lt;/SecureAgentPort&gt;&lt;SecureAdminPort&gt;8443&lt;/SecureAdminPort&gt;&lt;Clone&gt;FALSE&lt;/Clone&gt;&lt;SubsystemName&gt;CA pki.test 8443&lt;/SubsystemName&gt;&lt;DomainManager&gt;TRUE&lt;/DomainManager&gt;&lt;/CA&gt;&lt;SubsystemCount&gt;1&lt;/SubsystemCount&gt;&lt;/CAList&gt;&lt;KRAList&gt;&lt;KRA&gt;&lt;Host&gt;pki.test&lt;/Host&gt;&lt;UnSecurePort&gt;8080&lt;/UnSecurePort&gt;&lt;SecurePort&gt;8443&lt;/SecurePort&gt;&lt;SecureEEClientAuthPort&gt;8443&lt;/SecureEEClientAuthPort&gt;&lt;SecureAgentPort&gt;8443&lt;/SecureAgentPort&gt;&lt;SecureAdminPort&gt;8443&lt;/SecureAdminPort&gt;&lt;Clone&gt;FALSE&lt;/Clone&gt;&lt;SubsystemName&gt;KRA pki.test 8443&lt;/SubsystemName&gt;&lt;DomainManager&gt;FALSE&lt;/DomainManager&gt;&lt;/KRA&gt;&lt;SubsystemCount&gt;1&lt;/SubsystemCount&gt;&lt;/KRAList&gt;&lt;OCSPList&gt;&lt;SubsystemCount&gt;0&lt;/SubsystemCount&gt;&lt;/OCSPList&gt;&lt;TKSList&gt;&lt;SubsystemCount&gt;0&lt;/SubsystemCount&gt;&lt;/TKSList&gt;&lt;RAList&gt;&lt;SubsystemCount&gt;0&lt;/SubsystemCount&gt;&lt;/RAList&gt;&lt;TPSList&gt;&lt;SubsystemCount&gt;0&lt;/SubsystemCount&gt;&lt;/TPSList&gt;&lt;/DomainInfo&gt;</DomainInfo><Status>0</Status></XMLResponse>"
+    },
+    "headers": {
+     "Content-Length": [
+      "1607"
+     ],
+     "Content-Type": [
+      "application/xml"
+     ],
+     "Server": [
+      "Apache-Coyote/1.1"
+     ]
+    },
+    "status": {
+     "code": 200,
+     "message": "OK"
+    },
+    "url": "https://pki.test:8443/ca/admin/ca/getDomainXML"
+   }
+  }
+ ],
+ "recorded_with": "betamax/0.8.0"
+}

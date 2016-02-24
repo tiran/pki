@@ -1,0 +1,61 @@
+{
+ "http_interactions": [
+  {
+   "recorded_at": "2017-05-05T14:11:13",
+   "request": {
+    "body": {
+     "encoding": "utf-8",
+     "string": ""
+    },
+    "headers": {
+     "Accept": [
+      "application/json"
+     ],
+     "Accept-Encoding": [
+      "gzip, deflate"
+     ],
+     "Connection": [
+      "keep-alive"
+     ],
+     "Content-type": [
+      "application/json"
+     ],
+     "User-Agent": [
+      "PKI tests"
+     ]
+    },
+    "method": "GET",
+    "uri": "https://pki.test:8443/ca/rest/authorities"
+   },
+   "response": {
+    "body": {
+     "encoding": null,
+     "string": "[{\"isHostAuthority\":true,\"id\":\"8aecbef5-feef-48c2-bcb0-f36f06b4b7cf\",\"parentID\":null,\"issuerDN\":\"CN=CA Signing Certificate,OU=pkitest,O=pkitest\",\"serial\":1,\"dn\":\"CN=CA Signing Certificate,OU=pkitest,O=pkitest\",\"enabled\":true,\"description\":\"Host authority\",\"ready\":true,\"link\":null}]"
+    },
+    "headers": {
+     "Cache-Control": [
+      "private"
+     ],
+     "Content-Type": [
+      "application/json"
+     ],
+     "Expires": [
+      "Thu, 01 Jan 1970 00:00:00 UTC"
+     ],
+     "Server": [
+      "Apache-Coyote/1.1"
+     ],
+     "Transfer-Encoding": [
+      "chunked"
+     ]
+    },
+    "status": {
+     "code": 200,
+     "message": "OK"
+    },
+    "url": "https://pki.test:8443/ca/rest/authorities"
+   }
+  }
+ ],
+ "recorded_with": "betamax/0.8.0"
+}

@@ -52,7 +52,7 @@ class PKIConnection:
 
     def __init__(self, protocol='http', hostname='localhost', port='8080',
                  subsystem='ca', accept='application/json',
-                 trust_env=None):
+                 trust_env=None, session=None):
         """
         Set the parameters for a python-requests based connection to a
         Dogtag subsystem.
@@ -70,6 +70,8 @@ class PKIConnection:
         :param trust_env: use environment variables for http proxy and other
            requests settings (default: yes)
         :type trust_env: bool, None
+        :param session: custom request.Session object
+        :type session: request.Session, None
         :return: PKIConnection object.
         """
 
@@ -81,7 +83,9 @@ class PKIConnection:
         self.rootURI = self.protocol + '://' + self.hostname + ':' + self.port
         self.serverURI = self.rootURI + '/' + self.subsystem
 
-        self.session = requests.Session()
+        if session is None:
+            session = requests.Session()
+        self.session = session
         self.session.trust_env = trust_env
         if accept:
             self.session.headers.update({'Accept': accept})

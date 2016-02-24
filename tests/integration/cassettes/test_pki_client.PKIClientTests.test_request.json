@@ -1,0 +1,99 @@
+{
+ "http_interactions": [
+  {
+   "recorded_at": "2017-05-05T14:11:13",
+   "request": {
+    "body": {
+     "encoding": "utf-8",
+     "string": ""
+    },
+    "headers": {
+     "Accept": [
+      "application/json"
+     ],
+     "Accept-Encoding": [
+      "gzip, deflate"
+     ],
+     "Connection": [
+      "keep-alive"
+     ],
+     "User-Agent": [
+      "PKI tests"
+     ]
+    },
+    "method": "GET",
+    "uri": "https://pki.test:8443/ca/"
+   },
+   "response": {
+    "body": {
+     "encoding": "ISO-8859-1",
+     "string": "<!-- --- BEGIN COPYRIGHT BLOCK ---\n     This program is free software; you can redistribute it and/or modify\n     it under the terms of the GNU General Public License as published by\n     the Free Software Foundation; version 2 of the License.\n\n     This program is distributed in the hope that it will be useful,\n     but WITHOUT ANY WARRANTY; without even the implied warranty of\n     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n     GNU General Public License for more details.\n\n     You should have received a copy of the GNU General Public License along\n     with this program; if not, write to the Free Software Foundation, Inc.,\n     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\n\n     Copyright (C) 2007 Red Hat, Inc.\n     All rights reserved.\n     --- END COPYRIGHT BLOCK --- -->\n<html>\n<head>\n<script src=\"/pki/js/jquery.js\"></script>\n<script src=\"/pki/js/jquery.i18n.properties.js\"></script>\n<script src=\"/pki/js/underscore.js\"></script>\n<script src=\"/pki/js/backbone.js\"></script>\n<script src=\"/pki/js/pki.js\"></script>\n<script src=\"/pki/js/pki-banner.js\"></script>\n<script lang=\"javascript\">\n    window.location = '/ca/services';\n</script>\n</head>\n</html>\n"
+    },
+    "headers": {
+     "Content-Length": [
+      "1201"
+     ],
+     "Content-Type": [
+      "text/html;charset=ISO-8859-1"
+     ],
+     "Server": [
+      "Apache-Coyote/1.1"
+     ]
+    },
+    "status": {
+     "code": 200,
+     "message": "OK"
+    },
+    "url": "https://pki.test:8443/ca/"
+   }
+  },
+  {
+   "recorded_at": "2017-05-05T14:11:13",
+   "request": {
+    "body": {
+     "encoding": "utf-8",
+     "string": ""
+    },
+    "headers": {
+     "Accept": [
+      "application/json"
+     ],
+     "Accept-Encoding": [
+      "gzip, deflate"
+     ],
+     "Connection": [
+      "keep-alive"
+     ],
+     "User-Agent": [
+      "PKI tests"
+     ]
+    },
+    "method": "GET",
+    "uri": "https://pki.test:8443/ca/services"
+   },
+   "response": {
+    "body": {
+     "encoding": "ISO-8859-1",
+     "string": "<!-- --- BEGIN COPYRIGHT BLOCK ---\n     This program is free software; you can redistribute it and/or modify\n     it under the terms of the GNU General Public License as published by\n     the Free Software Foundation; version 2 of the License.\n\n     This program is distributed in the hope that it will be useful,\n     but WITHOUT ANY WARRANTY; without even the implied warranty of\n     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n     GNU General Public License for more details.\n\n     You should have received a copy of the GNU General Public License along\n     with this program; if not, write to the Free Software Foundation, Inc.,\n     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\n\n     Copyright (C) 2007 Red Hat, Inc.\n     All rights reserved.\n     --- END COPYRIGHT BLOCK --- -->\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n<head>\n<script src=\"/pki/js/jquery.js\"></script>\n<script src=\"/pki/js/jquery.i18n.properties.js\"></script>\n<script src=\"/pki/js/underscore.js\"></script>\n<script src=\"/pki/js/backbone.js\"></script>\n<script src=\"/pki/js/pki.js\"></script>\n<script src=\"/pki/js/pki-banner.js\"></script>\n\n<script type=\"text/javascript\" language=\"JavaScript\">\n$(function() {\n    $.i18n.properties({\n        name: 'services',\n        language: ' ', // suppress potential 404's due to .i18n.browserLang()\n        path: '/pki/ca/',\n        mode: 'map',\n        callback: function() {\n            var key;\n            for (key in $.i18n.map) {\n                var message = $.i18n.prop(key);\n                $('span.message[name='+key+']').html(message);\n            }\n        }\n    });\n});\n</script>\n\n\n<SCRIPT LANGUAGE=\"JavaScript\">\nvar header = new Object();\nvar fixed = new Object();\nvar recordSet = new Array;\nvar result = new Object();\nvar httpParamsCount = 0;\nvar httpHeadersCount = 0;\nvar authTokenCount = 0;\nvar serverAttrsCount = 0;\nheader.HTTP_PARAMS = new Array;\nheader.HTTP_HEADERS = new Array;\nheader.AUTH_TOKEN = new Array;\nheader.SERVER_ATTRS = new Array;\nheader.totalRecordCount = 2;\nvar recordCount = 0;\nvar record;\nrecord = new Object;\nrecord.HTTP_PARAMS = new Array;\nrecord.HTTP_HEADERS = new Array;\nrecord.AUTH_TOKEN = new Array;\nrecord.SERVER_ATTRS = new Array;\nrecord.port=8443;\nrecord.type=\"ee\";\nrecord.uri=\"ca/ee/ca\";\nrecord.host=\"pki.test\";\nrecord.prefix=\"https\";\nrecordSet[recordCount++] = record;\nrecord = new Object;\nrecord.HTTP_PARAMS = new Array;\nrecord.HTTP_HEADERS = new Array;\nrecord.AUTH_TOKEN = new Array;\nrecord.SERVER_ATTRS = new Array;\nrecord.port=8443;\nrecord.type=\"agent\";\nrecord.uri=\"ca/agent/ca\";\nrecord.host=\"pki.test\";\nrecord.prefix=\"https\";\nrecordSet[recordCount++] = record;\nrecord.recordSet = recordSet;\nresult.header = header;\nresult.fixed = fixed;\nresult.recordSet = recordSet;\n</SCRIPT>\n\n<title>CA Services</title>\n    <link rel=\"shortcut icon\" href=\"/pki/images/favicon.ico\" />\n    <link rel=\"stylesheet\" href=\"/pki/css/pki-base.css\" type=\"text/css\" />\n    <META http-equiv=Content-Type content=\"text/html; charset=UTF-8\">\n\n</head>\n<body bgcolor=\"#FFFFFF\" link=\"#666699\" vlink=\"#666699\" alink=\"#333366\">\n\n<div id=\"header\">\n    <span class=\"message\" name=\"logo\">\n    <a href=\"http://pki.fedoraproject.org/\" title=\"Visit pki.fedoraproject.org for more information about Certificate System products and services\"><img src=\"/pki/images/logo_header.gif\" alt=\"Certificate System\" id=\"myLogo\" /></a>\n    </span>\n    <div id=\"headertitle\">\n    <span class=\"message\" name=\"title\">\n    <a href=\"/\" title=\"Certificate System\">Certificate System</a>\n    </span>\n    </div>\n    <div id=\"account\">\n          <dl><dt><span></span></dt><dd></dd></dl>\n    </div>\n</div>\n\n<div id=\"mainNavOuter\" class=\"pki-ee-theme\">\n<div id=\"mainNav\">\n<div id=\"mainNavInner\">\n\n</div><!-- end mainNavInner -->\n</div><!-- end mainNav -->\n</div><!-- end mainNavOuter -->\n                                                                                \n                                                                                \n<div id=\"bar\">\n                                                                                \n<div id=\"systembar\">\n<div id=\"systembarinner\">\n                                                                                \n<div>\n  -\n</div>\n                                                                                \n                                                                                \n</div>\n</div>\n                                                                                \n</div>\n\n\n<font size=\"+1\" face=\"PrimaSans BT, Verdana, Arial, Helvetica, sans-serif\">\nCertificate System CA Services Page \n</font><br>\n<p> \n</font>\n<p>\n<center>\n<table border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n<tr valign=\"TOP\">\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<script language=javascript>\n\nfor (var i=0; i<result.recordSet.length; ++i) {\n    document.write('<tr valign=\"TOP\">');\n    document.write('<td>');\n    document.write('<td>');\n    document.write('<font size=4 face=\"PrimaSans BT, Verdana, sans-serif\">');\n    document.write('<li><a href=\"');\n    document.write(result.recordSet[i].prefix + \"://\" +\n      result.recordSet[i].host + \":\" + result.recordSet[i].port + \"/\"+\n      result.recordSet[i].uri);\n    if (result.recordSet[i].type == \"admin\") {\n        document.write('\">Admin Services</a></font>');\n    } else if (result.recordSet[i].type == \"agent\") {\n        document.write('\">Agent Services</a></font>');\n    } else if (result.recordSet[i].type == \"ee\") {\n        document.write('\">SSL End Users Services</a></font>');\n    }\n\n    document.write('</font></td></tr>');\n}\n</script>\n<tr valign=\"TOP\">\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n</table>\n</center>\n<div id=\"footer\">\n</div>\n</body>\n</html>\n"
+    },
+    "headers": {
+     "Content-Type": [
+      "text/html"
+     ],
+     "Server": [
+      "Apache-Coyote/1.1"
+     ],
+     "Transfer-Encoding": [
+      "chunked"
+     ]
+    },
+    "status": {
+     "code": 200,
+     "message": "OK"
+    },
+    "url": "https://pki.test:8443/ca/services"
+   }
+  }
+ ],
+ "recorded_with": "betamax/0.8.0"
+}

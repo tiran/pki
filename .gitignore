@@ -10,4 +10,4 @@ __pycache__
 /base/common/python/build/
 /base/common/python/dist/
 /base/common/python/dogtag_pki.egg-info/
-
+/tests/integration/ca_admin_cert.pem

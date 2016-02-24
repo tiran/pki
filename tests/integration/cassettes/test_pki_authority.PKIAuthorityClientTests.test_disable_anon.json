@@ -1,0 +1,58 @@
+{
+ "http_interactions": [
+  {
+   "recorded_at": "2017-05-05T14:11:13",
+   "request": {
+    "body": {
+     "encoding": "utf-8",
+     "string": ""
+    },
+    "headers": {
+     "Accept": [
+      "application/json"
+     ],
+     "Accept-Encoding": [
+      "gzip, deflate"
+     ],
+     "Connection": [
+      "keep-alive"
+     ],
+     "Content-Length": [
+      "0"
+     ],
+     "Content-type": [
+      "application/json"
+     ],
+     "User-Agent": [
+      "PKI tests"
+     ]
+    },
+    "method": "POST",
+    "uri": "https://pki.test:8443/ca/rest/authorities/aid/disable"
+   },
+   "response": {
+    "body": {
+     "encoding": null,
+     "string": "{\"Attributes\":{\"Attribute\":[]},\"ClassName\":\"com.netscape.certsrv.base.ForbiddenException\",\"Code\":403,\"Message\":\"Anonymous access not allowed.\"}"
+    },
+    "headers": {
+     "Content-Type": [
+      "application/json"
+     ],
+     "Server": [
+      "Apache-Coyote/1.1"
+     ],
+     "Transfer-Encoding": [
+      "chunked"
+     ]
+    },
+    "status": {
+     "code": 403,
+     "message": "Forbidden"
+    },
+    "url": "https://pki.test:8443/ca/rest/authorities/aid/disable"
+   }
+  }
+ ],
+ "recorded_with": "betamax/0.8.0"
+}

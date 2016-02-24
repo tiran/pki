@@ -1,0 +1,173 @@
+{
+ "http_interactions": [
+  {
+   "recorded_at": "2017-05-05T14:11:13",
+   "request": {
+    "body": {
+     "encoding": "utf-8",
+     "string": ""
+    },
+    "headers": {
+     "Accept": [
+      "application/json"
+     ],
+     "Accept-Encoding": [
+      "gzip, deflate"
+     ],
+     "Connection": [
+      "keep-alive"
+     ],
+     "Content-type": [
+      "application/json"
+     ],
+     "User-Agent": [
+      "PKI tests"
+     ]
+    },
+    "method": "GET",
+    "uri": "https://pki.test:8443/ca/rest/authorities"
+   },
+   "response": {
+    "body": {
+     "encoding": null,
+     "string": "[{\"isHostAuthority\":true,\"id\":\"8aecbef5-feef-48c2-bcb0-f36f06b4b7cf\",\"parentID\":null,\"issuerDN\":\"CN=CA Signing Certificate,OU=pkitest,O=pkitest\",\"serial\":1,\"dn\":\"CN=CA Signing Certificate,OU=pkitest,O=pkitest\",\"enabled\":true,\"description\":\"Host authority\",\"ready\":true,\"link\":null}]"
+    },
+    "headers": {
+     "Cache-Control": [
+      "private"
+     ],
+     "Content-Type": [
+      "application/json"
+     ],
+     "Expires": [
+      "Thu, 01 Jan 1970 00:00:00 UTC"
+     ],
+     "Server": [
+      "Apache-Coyote/1.1"
+     ],
+     "Transfer-Encoding": [
+      "chunked"
+     ]
+    },
+    "status": {
+     "code": 200,
+     "message": "OK"
+    },
+    "url": "https://pki.test:8443/ca/rest/authorities"
+   }
+  },
+  {
+   "recorded_at": "2017-05-05T14:11:13",
+   "request": {
+    "body": {
+     "encoding": "utf-8",
+     "string": ""
+    },
+    "headers": {
+     "Accept": [
+      "application/pkcs7-mime"
+     ],
+     "Accept-Encoding": [
+      "gzip, deflate"
+     ],
+     "Connection": [
+      "keep-alive"
+     ],
+     "Content-type": [
+      "application/json"
+     ],
+     "User-Agent": [
+      "PKI tests"
+     ]
+    },
+    "method": "GET",
+    "uri": "https://pki.test:8443/ca/rest/authorities/8aecbef5-feef-48c2-bcb0-f36f06b4b7cf/chain"
+   },
+   "response": {
+    "body": {
+     "encoding": null,
+     "string": "0\ufffd\u0003\ufffd\u0006\t*\ufffdH\ufffd\ufffd\r\u0001\u0007\u0002\ufffd\ufffd\u0003\ufffd0\ufffd\u0003\ufffd\u0002\u0001\u00011\u00000\u000f\u0006\t*\ufffdH\ufffd\ufffd\r\u0001\u0007\u0001\ufffd\u0002\u0004\u0000\ufffd\ufffd\u0003\ufffd0\ufffd\u0003\ufffd0\ufffd\u0002\ufffd\ufffd\u0003\u0002\u0001\u0002\u0002\u0001\u00010\r\u0006\t*\ufffdH\ufffd\ufffd\r\u0001\u0001\u000b\u0005\u00000E1\u00100\u000e\u0006\u0003U\u0004\n\f\u0007pkitest1\u00100\u000e\u0006\u0003U\u0004\u000b\f\u0007pkitest1\u001f0\u001d\u0006\u0003U\u0004\u0003\f\u0016CA Signing Certificate0\u001e\u0017\r170505123114Z\u0017\r370505123114Z0E1\u00100\u000e\u0006\u0003U\u0004\n\f\u0007pkitest1\u00100\u000e\u0006\u0003U\u0004\u000b\f\u0007pkitest1\u001f0\u001d\u0006\u0003U\u0004\u0003\f\u0016CA Signing Certificate0\ufffd\u0001\"0\r\u0006\t*\ufffdH\ufffd\ufffd\r\u0001\u0001\u0001\u0005\u0000\u0003\ufffd\u0001\u000f\u00000\ufffd\u0001\n\u0002\ufffd\u0001\u0001\u0000\ufffd\u00181\u0005\u0002\ufffd[m\ufffd\ufffd]\ufffd5\ufffdepi\ufffd\ufffd\ufffd\u000f\ufffd)$\ufffdQ\ufffd{(X~D\\\ufffdT\ufffdw\ufffd\ufffd\ufffd\u0252L\ufffd\ufffd\ufffdS9\"~eq\u001f\ufffd\u000f\rr\ufffd\ufffdl\ufffdS\ufffd<\ufffd^y`\ufffd\ufffd#`\ufffd\u07fag4\ufffd\u0000\ufffd\ufffd\\>\ufffd\ufffd\u0005*\ufffdUT\ufffdp!\u000f\ufffd\u001d\ufffd.$\ufffd'\ufffd\ufffd\ufffd\u0013\u0004Hn\ufffdK\ufffd P\ufffd\ufffd,\ufffd4\ufffd\ufffd\ufffd\ufffd?\u000bc\u001a\ufffd\ufffd\ufffd\ufffds:\u0002\u001bc0\u0007\ufffd\u0018\ufffd\u0004\u00024\u0012\ufffd2\ufffd@?]\ufffd\ufffdV\ufffd\ufffd\ufffd/\ufffd\ufffd2\ufffd][\ufffd\ufffd/\ufffd\ufffdG\ufffd\u024d\u2a78\u0016^Uz\ufffd\u000e\ufffd\ufffd\u000f1\ufffd9\ufffd\u0010%N\ufffd\ufffd\ufffd\ufffdM\ufffd\ufffdd5\u0012\t\ufffd\ufffd\ufffd\ufffd\u0013\u06a4c\ufffd!\ufffd=\t\ufffd\ufffdS\ufffd+N\ufffd\u0016\u0005\u001d\ufffd\ufffd\"\ufffdf\ufffd#\u001e\ufffd\ufffdm\ufffd\u00e2U\r\b#\ufffd\ufffd\u000e\ufffd \ufffd\ufffd\ufffd\ufffd\u001c\ufffdG\u0002\u0003\u0001\u0000\u0001\ufffd\ufffd\ufffd0\ufffd\ufffd0\u001f\u0006\u0003U\u001d#\u0004\u00180\u0016\ufffd\u0014(\ufffd=\ufffd6\ufffd.\u0001\u000f\ufffd.>&\u000b\rbu`:0\u000f\u0006\u0003U\u001d\u0013\u0001\u0001\ufffd\u0004\u00050\u0003\u0001\u0001\ufffd0\u000e\u0006\u0003U\u001d\u000f\u0001\u0001\ufffd\u0004\u0004\u0003\u0002\u0001\ufffd0\u001d\u0006\u0003U\u001d\u000e\u0004\u0016\u0004\u0014(\ufffd=\ufffd6\ufffd.\u0001\u000f\ufffd.>&\u000b\rbu`:08\u0006\b+\u0006\u0001\u0005\u0005\u0007\u0001\u0001\u0004,0*0(\u0006\b+\u0006\u0001\u0005\u0005\u00070\u0001\ufffd\u001chttp://pki.test:8080/ca/ocsp0\r\u0006\t*\ufffdH\ufffd\ufffd\r\u0001\u0001\u000b\u0005\u0000\u0003\ufffd\u0001\u0001\u0000+\ufffd\t\ufffd2P\u0011\n\u0002\ufffd\ufffd\ufffd\\{\u0003\ufffd\ufffd\ufffdo1\ufffd\ufffd\ufffdc\ufffdw\ufffd\ufffd?u\u001c\ufffd\u0005\ufffd\ufffd\ufffd>b\u000b\ufffd2\ufffd\ufffd8\f\ufffdX\ufffdb\ufffd.\ufffd\ufffdu\ufffd<\ufffd6\ufffd\ufffd\ufffd|L\u04c0 ?\ufffd\ufffd\ufffd\ufffd\ufffdU\ufffd\r\ufffdv\ufffd\u0012 f\ufffdlw\ufffd\ufffd:\ufffd5\ufffd\u0016\ufffd\ufffd&`\ufffd\ufffd3\ufffd\ufffd2\ufffd\ufffd\ufffd[\ufffd\u0018BDK\ufffd\u0727K83\ufffd\ufffdC\ufffd\ufffdx<\ufffd\u000e1\ufffd\ufffd\u0000m?\ufffd\ufffdX\ufffd\u0011$\ufffdo\ufffd\ufffd3\ufffd\ufffdApT|\ufffdk@\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u000e\ufffd\u0005\ufffdm%\ufffd\u0014\ufffd\ufffd\u0000\ufffdP\ufffd^\ufffd\ufffdd'PY\ufffdu+\ufffd\u001a\ufffd\u0012\ufffdSu\ufffdQ\u001b\r\ufffd^\u0019&\u001dw\u0011_|\ufffd\u030b&s|\u000e\ufffd\ufffd\u0013\ufffd\u0017p\ufffd!\ufffd\ufffd\ufffd\ufffdi\ufffd\ufffd\ufffd\ufffd\ufffd\u00000\ufffdA\ufffd\ufffd\ufffd\ufffd\ufffd\u4660U\ufffd\ufffd\u001d\ufffdl\ufffdR\u0004\ufffd\u0007]\ufffd\ufffd\ufffd1\u0000"
+    },
+    "headers": {
+     "Cache-Control": [
+      "private"
+     ],
+     "Content-Length": [
+      "987"
+     ],
+     "Content-Type": [
+      "application/pkcs7-mime"
+     ],
+     "Expires": [
+      "Thu, 01 Jan 1970 00:00:00 UTC"
+     ],
+     "Server": [
+      "Apache-Coyote/1.1"
+     ]
+    },
+    "status": {
+     "code": 200,
+     "message": "OK"
+    },
+    "url": "https://pki.test:8443/ca/rest/authorities/8aecbef5-feef-48c2-bcb0-f36f06b4b7cf/chain"
+   }
+  },
+  {
+   "recorded_at": "2017-05-05T14:11:13",
+   "request": {
+    "body": {
+     "encoding": "utf-8",
+     "string": ""
+    },
+    "headers": {
+     "Accept": [
+      "application/x-pem-file"
+     ],
+     "Accept-Encoding": [
+      "gzip, deflate"
+     ],
+     "Connection": [
+      "keep-alive"
+     ],
+     "Content-type": [
+      "application/json"
+     ],
+     "User-Agent": [
+      "PKI tests"
+     ]
+    },
+    "method": "GET",
+    "uri": "https://pki.test:8443/ca/rest/authorities/8aecbef5-feef-48c2-bcb0-f36f06b4b7cf/chain"
+   },
+   "response": {
+    "body": {
+     "encoding": null,
+     "string": "-----BEGIN PKCS7-----\nMIID1wYJKoZIhvcNAQcCoIIDyDCCA8QCAQExADAPBgkqhkiG9w0BBwGgAgQAoIID\r\nqDCCA6QwggKMoAMCAQICAQEwDQYJKoZIhvcNAQELBQAwRTEQMA4GA1UECgwHcGtp\r\ndGVzdDEQMA4GA1UECwwHcGtpdGVzdDEfMB0GA1UEAwwWQ0EgU2lnbmluZyBDZXJ0\r\naWZpY2F0ZTAeFw0xNzA1MDUxMjMxMTRaFw0zNzA1MDUxMjMxMTRaMEUxEDAOBgNV\r\nBAoMB3BraXRlc3QxEDAOBgNVBAsMB3BraXRlc3QxHzAdBgNVBAMMFkNBIFNpZ25p\r\nbmcgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC9\r\nGDEFAq9bbZTsXcQ1i2Vwad3dzA+GKSSxUZB7KFh+RFyvVMV3r93xyZJM9v/juFM5\r\nIn5lcR+tDw1yk4xs81OAPNdeeWDX/yNg+N+6ZzTXALvvXD6OgwUqqFVUxnAhD8Ud\r\n0y4koifWyNoTBEhuuEvuIFDK+SyTNOT794M/C2MagoaKg3M6AhtjMAenGLgEAjQS\r\nojKMQD9d7vdWiYKBL+TqMuVdW66XL4PlR9vJjeKpuBZeVXrzDrGSDzHDOYMQJU6/\r\n9snMTYK2ZDUSCZP5meoT2qRj0iGUPQne71PSK07fFgUdr48i+GaQIx6v/W2Fw6JV\r\nDQgjsKwOxCCZof/RHI9HAgMBAAGjgZ4wgZswHwYDVR0jBBgwFoAUKPw9rDbhgi4B\r\nD9YuPiYLDWJ1YDowDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAcYwHQYD\r\nVR0OBBYEFCj8Paw24YIuAQ/WLj4mCw1idWA6MDgGCCsGAQUFBwEBBCwwKjAoBggr\r\nBgEFBQcwAYYcaHR0cDovL3BraS50ZXN0OjgwODAvY2Evb2NzcDANBgkqhkiG9w0B\r\nAQsFAAOCAQEAK4EJxjJQEQoCmYu1XHsDh+LwbzG7sOpjnneHsD91HJ0Fpa3TPmIL\r\n1TKpyzgMs1iwYoIu4u11lDyXNuLY03xM04AgP5ah/fLyslXIDdZ2zBIgZvtsd/+0\r\nOu01rBa7vCZgh9Uzl84yk7yLW6QYQkRL7tynSzgz9c5Dhu54PIsOMbjwAG0/8e9Y\r\nvBEkuW/l+DOcq0FwVHzca0Cws/K34J+ZDscF4m0lgBSpywDsjVDDXuPXZCdQWc91\r\nK+oaiBKoU3XOURsNsl4ZJh13EV98+cyLJnN8DqGGE7IXcNghiPuZuGmYgMr32gAw\r\nsEG/lqGFmuSZoFXK5x26bKNSBLQHXenQ6jEA\r\n-----END PKCS7-----\n"
+    },
+    "headers": {
+     "Cache-Control": [
+      "private"
+     ],
+     "Content-Length": [
+      "1400"
+     ],
+     "Content-Type": [
+      "application/x-pem-file"
+     ],
+     "Expires": [
+      "Thu, 01 Jan 1970 00:00:00 UTC"
+     ],
+     "Server": [
+      "Apache-Coyote/1.1"
+     ]
+    },
+    "status": {
+     "code": 200,
+     "message": "OK"
+    },
+    "url": "https://pki.test:8443/ca/rest/authorities/8aecbef5-feef-48c2-bcb0-f36f06b4b7cf/chain"
+   }
+  }
+ ],
+ "recorded_with": "betamax/0.8.0"
+}

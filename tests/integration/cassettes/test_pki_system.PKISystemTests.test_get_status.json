@@ -1,0 +1,52 @@
+{
+ "http_interactions": [
+  {
+   "recorded_at": "2017-05-05T14:11:13",
+   "request": {
+    "body": {
+     "encoding": "utf-8",
+     "string": ""
+    },
+    "headers": {
+     "Accept": [
+      "application/json"
+     ],
+     "Accept-Encoding": [
+      "gzip, deflate"
+     ],
+     "Connection": [
+      "keep-alive"
+     ],
+     "User-Agent": [
+      "PKI tests"
+     ]
+    },
+    "method": "GET",
+    "uri": "https://pki.test:8443/ca/admin/ca/getStatus"
+   },
+   "response": {
+    "body": {
+     "encoding": null,
+     "string": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><XMLResponse><State>1</State><Type>CA</Type><Status>running</Status><Version>10.4.3-1.1.fc25</Version></XMLResponse>"
+    },
+    "headers": {
+     "Content-Length": [
+      "170"
+     ],
+     "Content-Type": [
+      "application/xml"
+     ],
+     "Server": [
+      "Apache-Coyote/1.1"
+     ]
+    },
+    "status": {
+     "code": 200,
+     "message": "OK"
+    },
+    "url": "https://pki.test:8443/ca/admin/ca/getStatus"
+   }
+  }
+ ],
+ "recorded_with": "betamax/0.8.0"
+}
